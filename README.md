@@ -17,8 +17,10 @@ resources里的sql文件，user_1表示为源数据库，复制建表语句和in
 
 方案一：
     A数据库做了分片有多个数据源，多线程每个线程对应的一个数据源，DemoStartApplication
+    
 方案二：
     A的表的某个字段有多个类型，以该字段作为线程切割的维度，DemoDataDimensionStartApplication
+    
 方案三：
     以数量作为线程切割的维度，DemoQuantityStartApplication
 
